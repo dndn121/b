@@ -9,6 +9,7 @@ struct Role {
     int ap; // attack power 攻擊力
     int dp; // defence power 防禦力
     int mp; // Magic point 魔力
+    int sp; // spirit power 精神能量
 };
 
 void dump_role(Role& role) {
@@ -18,6 +19,7 @@ void dump_role(Role& role) {
     cout << "攻擊力： " << role.ap << endl;
     cout << "防禦力： " << role.dp << endl;
     cout << "魔力： "<< role.mp << endl;
+    cout << "精神能量： "<< role.mp << endl;
 }
 
 void test_role() {
@@ -31,6 +33,7 @@ void test_role() {
     role.ap = 1;
     role.dp = 1;
     role.mp = 1;
+    role.sp = 1;
 
     dump_role(role);
 }
